@@ -11,7 +11,7 @@ const key = environment.API_Key;
 
 @Injectable({ providedIn: 'root' })
 export class Service {
-
+  clases='';
 
   constructor(private http: HttpClient) {}
 
