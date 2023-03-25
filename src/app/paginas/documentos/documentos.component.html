@@ -1,0 +1,59 @@
+<app-header></app-header>
+<main class="form-signin w-100 m-auto">
+    <div class="container-md border border-dark m-3 p-3 mx-auto">
+      
+ <form [formGroup]="documentoForm">
+    <h3 class="h3">Crear documento</h3>
+    <label for="floatingInput" class="d-block">Nombre:</label>
+    <input
+      type="text"
+      class="form-control w-100"
+      formControlName="nombre"
+    />
+
+    <label for="floatingInput" class="d-block">Carrera:</label>
+    <input
+      type="text"
+      class="form-control w-100"
+      formControlName="carrera"
+    />
+
+    <label for="floatingInput" class="d-block">Semestre:</label>
+    <input
+      type="text"
+      class="form-control w-100"
+      formControlName="semestre"
+    />
+
+    <label for="floatingInput" class="d-block">Turno:</label>
+    <input
+      type="text"
+      class="form-control w-100"
+      formControlName="turno"
+      required
+    />
+
+
+    <label for="floatingInput" class="d-block">Edad:</label>
+    <input
+      type="number"
+      class="form-control w-100"
+      formControlName="edad"
+      required
+    />
+
+    <label for="floatingInput" class="d-block">Promedio:</label>
+    <input
+      type="number"
+      class="form-control w-100"
+      formControlName="promedio"
+      required
+    />
+
+    <button class="btn btn-success mt-3" type="submit"(click)="crearDocumento()" >
+      Crear Documento
+    </button>
+
+  </form>
+</div>
+</main>
